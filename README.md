@@ -21,9 +21,10 @@ Add this to your package's `pubspec.yaml` file:
 dependencies:
   text_form_field_flutter: ^0.0.1
 
-Examples
+## Examples
 
-Basic Usage
+## Basic Usage
+
 TextFormFieldFlutter(
   labelText: 'Username',
   hintText: 'Enter your username',
