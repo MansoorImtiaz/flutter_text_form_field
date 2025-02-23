@@ -1,0 +1,20 @@
+name: example
+description: Example app for flutter_text_form_field
+publish_to: none
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_text_form_field:
+    path: ../        # This points to the parent directory
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true

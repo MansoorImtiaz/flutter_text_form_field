@@ -2,6 +2,9 @@ name: flutter_text_form_field
 description: A highly customizable Flutter text form field widget with various label behaviors, styling options, and validation features.
 version: 0.0.1
 homepage: https://github.com/MansoorImtiaz/flutter_text_form_field
+repository: https://github.com/MansoorImtiaz/flutter_text_form_field
+documentation: https://github.com/MansoorImtiaz/flutter_text_form_field/blob/main/README.md
+issue_tracker: https://github.com/MansoorImtiaz/flutter_text_form_field/issues
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -17,3 +20,18 @@ dev_dependencies:
   flutter_lints: ^2.0.0
 
 flutter:
+
+
+platforms:
+  android:
+  ios:
+  web:
+  macos:
+  linux:
+  windows:
+
+topics:
+  - form
+  - widget
+  - customizable
+  - text-field
