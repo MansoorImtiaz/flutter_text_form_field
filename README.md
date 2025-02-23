@@ -18,7 +18,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  text_form_field_flutter: ^0.0.1
+  text_form_field_flutter: ^0.0.3
 
 ```
 
@@ -27,16 +27,16 @@ dependencies:
 ### Basic Usage
 
 ```dart
-@TextFormFieldFlutter(
+TextFormFieldFlutter(
   labelText: 'Username',
   hintText: 'Enter your username',
-)
+);
 ```
 
 ### Email Field with Validation
 
 ```dart
-@TextFormFieldFlutter(
+TextFormFieldFlutter(
   labelText: 'Email',
   hintText: 'Enter your email',
   keyboardType: TextInputType.emailAddress,
@@ -53,13 +53,13 @@ dependencies:
     }
     return null;
   },
-)
+);
 ```
 
 ### Password Field
 
 ```dart
-@TextFormFieldFlutter(
+TextFormFieldFlutter(
   labelText: 'Password',
   hintText: 'Enter your password',
   obscureText: true,
@@ -72,13 +72,13 @@ dependencies:
     }
     return null;
   },
-)
+);
 ```
 
 ### Custom Styling
 
 ```dart
-@TextFormFieldFlutter(
+TextFormFieldFlutter(
   labelText: 'Custom Field',
   hintText: 'Enter text',
   fillColor: Colors.grey[200],
@@ -87,32 +87,32 @@ dependencies:
   borderColor: Colors.blue,
   labelFontSize: 16.0,
   hintFontSize: 14.0,
-)
+);
 ```
 
 ### Different Label Behaviors
 
 ```dart
 // External Label
-@TextFormFieldFlutter(
+TextFormFieldFlutter(
   labelText: 'External Label',
   hintText: 'Enter text',
   labelBehaviorStyles: LabelBehaviorStyles.labelExternal,
-)
+);
 
 // Floating Label
-@TextFormFieldFlutter(
+TextFormFieldFlutter(
   labelText: 'Floating Label',
   hintText: 'Enter text',
   labelBehaviorStyles: LabelBehaviorStyles.labelAuto,
-)
+);
 
 // Always Floating Label
-@TextFormFieldFlutter(
+TextFormFieldFlutter(
   labelText: 'Always Floating',
   hintText: 'Enter text',
   labelBehaviorStyles: LabelBehaviorStyles.labelAlways,
-)
+);
 ```
 
 ## Complete Form Example

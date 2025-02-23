@@ -51,9 +51,14 @@ class TextFormFieldFlutter extends FormField<String> {
   }) : super(
     key: key,
     validator: validator,
-    initialValue: controller?.text,
+    initialValue: controller?.text ?? '',
     autovalidateMode: autovalidateMode ?? AutovalidateMode.disabled,
     builder: (FormFieldState<String> state) {
+      if (controller != null) {
+        controller.addListener(() {
+          state.didChange(controller.text);
+        });
+      }
       final errorColor = state.hasError ? Colors.red : null;
 
       return _CustomTextFieldBuilder(
