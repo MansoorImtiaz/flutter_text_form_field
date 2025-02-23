@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_text_form_field/flutter_text_form_field.dart';
+import 'package:text_form_field_flutter/text_form_field_flutter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,7 +33,7 @@ class MyHomePage extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            FlutterTextFormField(
+            TextFormFieldFlutter(
               labelText: 'Email',
               hintText: 'Enter your email',
               keyboardType: TextInputType.emailAddress,
@@ -46,7 +46,7 @@ class MyHomePage extends StatelessWidget {
               },
             ),
             const SizedBox(height: 16),
-            FlutterTextFormField(
+            TextFormFieldFlutter(
               labelText: 'Password',
               hintText: 'Enter your password',
               obscureText: true,

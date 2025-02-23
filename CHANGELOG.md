@@ -1,6 +1,6 @@
 ## 0.0.1
 
-* Initial release of flutter_text_form_field package
+* Initial release of text_form_field_flutter package
 * Features included:
     * Multiple label behavior styles (never, auto, always, external)
     * Comprehensive theme support with customizable colors and styles

@@ -19,8 +19,8 @@ enum LabelBehaviorStyles {
 
 /// A highly customizable text form field that supports various styling options
 /// and validation features
-class FlutterTextFormField extends FormField<String> {
-  FlutterTextFormField({
+class TextFormFieldFlutter extends FormField<String> {
+  TextFormFieldFlutter({
     Key? key,
     TextEditingController? controller,
     TextInputType? keyboardType,

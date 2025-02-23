@@ -1,5 +1,5 @@
 name: example
-description: Example app for flutter_text_form_field
+description: Example app for text_form_field_flutter
 publish_to: none
 
 environment:
@@ -8,8 +8,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_text_form_field:
-    path: ../        # This points to the parent directory
+  text_form_field_flutter:
+    path: ../
 
 dev_dependencies:
   flutter_test:

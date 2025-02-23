@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_text_form_field/flutter_text_form_field.dart';
+import 'package:text_form_field_flutter/text_form_field_flutter.dart';
 
 void main() {
   testWidgets('FlutterTextFormField displays label and hint text', (WidgetTester tester) async {
     await tester.pumpWidget(
       MaterialApp(
         home: Scaffold(
-          body: FlutterTextFormField(
+          body: TextFormFieldFlutter(
             labelText: 'Email',
             hintText: 'Enter your email',
           ),
@@ -30,7 +30,7 @@ void main() {
             return Scaffold(
               body: Form(
                 key: formKey,
-                child: FlutterTextFormField(
+                child: TextFormFieldFlutter(
                   labelText: 'Email',
                   hintText: 'Enter your email',
                   validator: (value) => 'Please enter email',
@@ -59,7 +59,7 @@ void main() {
     await tester.pumpWidget(
       MaterialApp(
         home: Scaffold(
-          body: FlutterTextFormField(
+          body: TextFormFieldFlutter(
             labelText: 'Email',
             hintText: 'Enter your email',
             controller: controller,
@@ -76,7 +76,7 @@ void main() {
     await tester.pumpWidget(
       MaterialApp(
         home: Scaffold(
-          body: FlutterTextFormField(
+          body: TextFormFieldFlutter(
             labelText: 'Search',
             hintText: 'Search here',
             prefixIcon: const Icon(Icons.search),
