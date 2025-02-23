@@ -1,7 +1,6 @@
 # Text Form Field Flutter
 
-A highly customizable Flutter text form field widget that supports various label behaviors, styling
-options, and validation features.
+A highly customizable Flutter text form field widget that supports various label behaviors, styling options, and validation features.
 
 ## Features
 
@@ -21,17 +20,23 @@ Add this to your package's `pubspec.yaml` file:
 dependencies:
   text_form_field_flutter: ^0.0.1
 
+```
+
 ## Examples
 
-## Basic Usage
+### Basic Usage
 
-TextFormFieldFlutter(
+```dart
+@TextFormFieldFlutter(
   labelText: 'Username',
   hintText: 'Enter your username',
 )
+```
 
-Email Field with Validation
-TextFormFieldFlutter(
+### Email Field with Validation
+
+```dart
+@TextFormFieldFlutter(
   labelText: 'Email',
   hintText: 'Enter your email',
   keyboardType: TextInputType.emailAddress,
@@ -49,9 +54,12 @@ TextFormFieldFlutter(
     return null;
   },
 )
+```
 
-Password Field
-TextFormFieldFlutter(
+### Password Field
+
+```dart
+@TextFormFieldFlutter(
   labelText: 'Password',
   hintText: 'Enter your password',
   obscureText: true,
@@ -65,9 +73,12 @@ TextFormFieldFlutter(
     return null;
   },
 )
+```
 
-Custom Styling
-TextFormFieldFlutter(
+### Custom Styling
+
+```dart
+@TextFormFieldFlutter(
   labelText: 'Custom Field',
   hintText: 'Enter text',
   fillColor: Colors.grey[200],
@@ -77,30 +88,36 @@ TextFormFieldFlutter(
   labelFontSize: 16.0,
   hintFontSize: 14.0,
 )
+```
 
-Different Label Behaviors
+### Different Label Behaviors
+
+```dart
 // External Label
-TextFormFieldFlutter(
+@TextFormFieldFlutter(
   labelText: 'External Label',
   hintText: 'Enter text',
   labelBehaviorStyles: LabelBehaviorStyles.labelExternal,
 )
 
 // Floating Label
-TextFormFieldFlutter(
+@TextFormFieldFlutter(
   labelText: 'Floating Label',
   hintText: 'Enter text',
   labelBehaviorStyles: LabelBehaviorStyles.labelAuto,
 )
 
 // Always Floating Label
-TextFormFieldFlutter(
+@TextFormFieldFlutter(
   labelText: 'Always Floating',
   hintText: 'Enter text',
   labelBehaviorStyles: LabelBehaviorStyles.labelAlways,
 )
+```
 
-Complete Form Example
+## Complete Form Example
+
+```dart
 class MyForm extends StatefulWidget {
   @override
   _MyFormState createState() => _MyFormState();
@@ -167,15 +184,35 @@ class _MyFormState extends State<MyForm> {
     super.dispose();
   }
 }
+```
 
-Available Properties
-PropertyTypeDescriptionlabelTextStringThe text to display as the field labelhintTextStringPlaceholder text when field is emptyvalidatorFunction?Function that returns error message or nulllabelBehaviorStylesLabelBehaviorStylesControls how the label behavesfillColorColor?Background color of the fieldborderColorColor?Color of the field borderlabelColorColor?Color of the label texthintColorColor?Color of the hint textborderRadiusdouble?Radius of the field cornerslabelFontSizedouble?Size of the label texthintFontSizedouble?Size of the hint textprefixIconWidget?Icon shown before the inputsuffixIconWidget?Icon shown after the inputobscureTextboolWhether to hide the input textreadOnlyboolWhether the field is read-only
+## Available Properties
 
-Contributing
+| Property | Type | Description |
+|----------|------|-------------|
+| `labelText` | String | The text to display as the field label |
+| `hintText` | String | Placeholder text when field is empty |
+| `validator` | Function? | Function that returns error message or null |
+| `labelBehaviorStyles` | LabelBehaviorStyles | Controls how the label behaves |
+| `fillColor` | Color? | Background color of the field |
+| `borderColor` | Color? | Color of the field border |
+| `labelColor` | Color? | Color of the label text |
+| `hintColor` | Color? | Color of the hint text |
+| `borderRadius` | double? | Radius of the field corners |
+| `labelFontSize` | double? | Size of the label text |
+| `hintFontSize` | double? | Size of the hint text |
+| `prefixIcon` | Widget? | Icon shown before the input |
+| `suffixIcon` | Widget? | Icon shown after the input |
+| `obscureText` | bool | Whether to hide the input text |
+| `readOnly` | bool | Whether the field is read-only |
+
+## Contributing
+
 Contributions are welcome! If you find a bug or want a feature, please create an issue.
-License
-MIT License
 
+## License
+
+```
 Copyright (c) 2025 Mansoor Imtiaz
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -184,9 +221,4 @@ in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is furnished
 to do so.
-
-Would you like me to:
-1. Add more examples?
-2. Include specific use cases?
-3. Add screenshots of the widget in action?
-4. Create a more detailed API reference?
+```
